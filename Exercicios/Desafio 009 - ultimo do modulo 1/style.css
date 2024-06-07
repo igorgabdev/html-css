@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+
+body{
+    background-image: linear-gradient(to right,#173750,#3B5C6B);
+    margin: 10%;
+}
+
+main{
+    background-color: #8bbdab;
+    margin: auto;
+    text-align: center;
+    border-radius: 2em;
+    padding: 1.4em;
+    box-shadow: 5px 3px 15px black;
+}
+h1{
+    font-family: cursive;
+    font-size: 3em;
+}
+
+mark{
+    background-color: white;
+    text-align: center;
+    border-radius: 50px;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: 10px 6px 15px #173750;
+}
+
+
+

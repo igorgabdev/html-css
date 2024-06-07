@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:hover{
+    color: black;
+    text-decoration: underline;
+}
+a:visited{
+    color: darkred;
+}
+a:active{
+    color: aqua;
+}
+
+.destaque1{
+    background-color:rgba(0, 19, 128, 0.233);
+}
+.destaque2{
+    background-color: rgba(128, 0, 128, 0.233);
+}
+.destaque3{
+    background-color: rgba(128, 0, 0, 0.233);
+}
+
+.especial::before{
+    content: '-->';
+}
+
+.especial::after{
+    content: '<--';
+}

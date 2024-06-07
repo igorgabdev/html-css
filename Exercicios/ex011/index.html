@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture> <!--tem que estar na ordem as source para funcionar a flexibilidade de imagem para diferentes tipos de dispositivos-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-P.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-M.png" type="image/png">
+        <img src="imagens/foto-G.png" alt="Imagem flexível">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir audio em html5</p>
+    <audio preload="metadata" controls loop>
+        <source src="midia/Disfigure - Blank _ Melodic Dubstep _ NCS - Copyright Free Music (128).mp3" type="audio/mpeg">
+        <source src="midia/Disfigure-Blank-_-Melodic-Dubstep-_-NCS-Copyright-Free-Music-_128_.ogg" type="audio/ogg">
+        <p>Infelizmente seu navegador não consegue reproduzir Áudio.
+            ,<a href="midia/Disfigure - Blank _ Melodic Dubstep _ NCS - Copyright Free Music (128).mp3">clique aqui para baixar o arquivo MP3</a>
+        </p>
+        
+    </audio>
+
+    <!--MP3, WAV, OGG-->
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste foto e video</title>
+</head>
+<body>
+    <h1>Teste de Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 700px)" srcset="midias/fotos/foto-P.png">
+        <source media="(max-width: 1050px)" srcset="midias/fotos/foto-M.png">
+        <img src="midias/fotos/foto-G.png" alt="Imagem Flexivel">
+    </picture>
+    
+    <audio preload="metadata" controls loop>
+        <source src="midias/audios/Disfigure - Blank _ Melodic Dubstep _ NCS - Copyright Free Music (128).mp3" type="audio/mpeg">
+        
+        <source src="midias/audios/Disfigure-Blank-_-Melodic-Dubstep-_-NCS-Copyright-Free-Music-_128_.ogg" type="audio/ogg">
+
+        <p>Infelizmente seu navegador não suporta reprodução de Áudio</p>
+        <p>Para baixar o Áudio em MP3, <a href="midias/audios/Disfigure - Blank _ Melodic Dubstep _ NCS - Copyright Free Music (128).mp3">Clique aqui</a>.</p>
+
+    </audio>
+</body>
+</html>

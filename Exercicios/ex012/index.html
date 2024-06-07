@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo Vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado em meu servidor</p>
+        <video width="300" controls loop poster="imagens/pexels-burcu-bircan-680818596-18287752.jpg">
+            <!--Poster serve para por capa no vídeo-->
+            <!--Width serve para diminuir o tamanho do video na tela-->
+            <!--Controls serve para aparecer os controles de paly no vídeo-->
+            <source src="midia/Meuvideo.mp4" type="video/mp4">
+            <source src="midia/Meuvideo.webm" type="video/webm">
+            <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p>
+
+        </video>
+    <h1>Inserindo vídeos do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/p7ZsBPK656s?si=rElSyq7xLTIbhHbO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>

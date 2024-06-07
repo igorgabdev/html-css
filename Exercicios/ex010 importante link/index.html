@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+    <style>
+        body {
+            background-color: goldenrod;
+            mark{background-color: bisque;}
+            
+            }
+    </style>
+</head>
+<body>
+    <h1><mark>Usando links externos</mark></h1>
+  
+    <p>Você pode acessar o meu <a href="https://github.com/gustavoguanabara" target="_blank" rel="external">repositório público no GitHub</a></p>
+   <!--target="_blank" serve para abrir o link em uma nova janela-->
+   <!--rel="external" é para mostrar que o link é externo-->
+    <p>Você também pode acessar o meu <a href="https://www.youtube.com/" target="_blank" rel="external">canal gratuito no youtube</a></p>
+
+    <h1>Usando links internos</h1>
+    <p>Está é a primeira página do site, se você quiser, pode acessar a minha <a href="pag002.html" target='_self'rel="next">segunda página</a></p>
+    
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" target="_self" rel="next">página de notícias</a></p>
+
+    <h1>LINKS PARA DOWNLOAD</h1>
+    <ul>
+        <li><a href="livro/Card Salvar o Fogo - Igs.pdf" download="Card Salvar o Fogo - Igs.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+        <li><a href="livro/Card Salvar o Fogo - Igs.rar" download="livro/Card Salvar o Fogo - Igs.rar" type="application/rar">Livro compactado em zip</a></li>
+        <!--Para ver os "types" de arquivos: https://www.iana.org/assignments/media-types/media-types.xhtml-->
+    </ul>
+    
+</body>
+</html>

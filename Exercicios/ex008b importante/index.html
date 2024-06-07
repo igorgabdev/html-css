@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+    <style>
+body {
+    background-color: goldenrod;
+    mark {
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <h1><mark>Outras formatações</mark></h1>
+    <h2><mark>Código Fonte</mark></h2>
+    <p>O comando <code>document.getElementById('Tester)</code> é escrito em linguagem JavaScript.</p>
+    <pre>
+        <code> <!-- Tag "code" serve para a fonte ficar em mono todas do mesmo tamanho, para codigos-->
+    num = int(input('Digite um valor'))
+    if num % 2 == 0:
+    print(f'O número {num} é Par')
+    else:
+    print(f'O número {num} é impar')
+    print('fim do programa')
+        </code>
+    </pre> 
+    <!--Tag "pre" serve para as linhas ficar da forma que escreveu-->
+    <h2><mark>Citações</mark></h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido.</q></p>
+    <!--Tag "Q" serve para dar sentido de citação no caso as ""-->
+    <!--Tag "Mark" Serve para marcar o texto envelopado-->
+    <h2>Citações Completas</h2>
+    <p>Segundo Suely Alves de Toledo, no seu livro de HTML para leigos:</p>
+    <blockquote cite="https://www.google.com.br/books/edition/Guia_de_Orienta%C3%A7%C3%A3o_e_Desenvolvimento_d/1YuwDwAAQBAJ?hl=pt-BR&gbpv=1&dq=html&printsec=frontcover">
+        <!--Tag "blockquote serve para fazer uma citação completa"-->
+        <!--"cite após o blockquote ser para por o link da referência da citação para manter os direitos"-->
+
+        O uso de indentação é recomendado há muitos anos na escrita de códigos
+    
+    </blockquote>
+    <h2>Abreviação</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
+    <!--Tag "abbr" serve para dar um significado de uma sigla, quando passa o mouse em cima aparece-->
+    <h2>Texto Invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p>
+    <!--Tag "bdo serve para inverter o texto"-->
+    
+</body>
+</html>
