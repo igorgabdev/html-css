@@ -20,15 +20,19 @@ header {
     color: white;
     text-align: center;
     padding-top: 50px;
+    width: 100%;
     
 }
 header>h1{
     font-variant: small-caps;
     font-family: var(--fonte2);
-    font-size: 3em;
+    font-size: 10vw;
 }
 header>p{
     padding-bottom: 50px;
+    font-family: var(--fonte1);
+    display: block;
+    display: block;
 }
 a{
     color: white;
@@ -54,8 +58,22 @@ section{
 section.normal{
     background-color: white;
 }
+section#img01{
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.479);
+}
+section#img02{
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.479);
+
+}
 section.imagem{
-    background-color: rgb(85, 85, 80);
+    background-color: darkgrey;
+    background-position: bottom center;
+    background-size: cover;
+    background-attachment: fixed;
     
 }
 .imagem>p{
@@ -67,6 +85,8 @@ section.imagem{
 }
 footer{
     background-color: black;
+    font-size: 1.2em;
+    font-family: var(--fonte1);
     color: white;
     text-align: center;
     padding: 10px;
