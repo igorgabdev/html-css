@@ -8,10 +8,25 @@
       h1,
       body {
         font-family: Arial, Helvetica, sans-serif;
+        background-color: lightgoldenrodyellow;
       }
       table {
         width: 500px;
         border-collapse: collapse;
+        margin: auto;
+        box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.507);
+        position: relative;
+      }
+      thead > tr > th{
+        position: sticky;
+        top: -1px;
+        background-color: #353434;
+      }
+      caption{
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px;
+        background-color: lightgray;
       }
       td,
       th {
@@ -20,8 +35,14 @@
       }
       thead,
       tfoot {
-        background-color: gray;
+        background-color: #353434;
         color: white;
+      }
+      tbody > tr:nth-child(odd){
+        background-color: lightgray;
+      }
+      tbody > tr:nth-child(even){
+        background-color: white;
       }
       .num {
         text-align: right;
@@ -29,11 +50,12 @@
     </style>
   </head>
   <body>
-    <h1>Uso de Tabelas Grandes</h1>
+    <h1 style="text-align: center; text-transform: uppercase ;">Uso de Tabelas Grandes</h1>
 
     <!--
     ANATOMIA PARA TABELAS GRANDES
     TABLE
+    CAPTION
         THEAD
             TR,TD,TH
         TBODY
@@ -46,10 +68,11 @@
             TH= TITULO
     -->
     <table>
+      <caption>População das Unidades Federativas</caption>
       <thead>
         <tr>
-          <th>ESTADO</th>
-          <th>POPULAÇÃO</th>
+          <th scope="col">ESTADO</th>
+          <th scope="col" style="width: 50px;">POPULAÇÃO</th>
         </tr>
       </thead>
       <tbody>
@@ -164,7 +187,7 @@
       </tbody>
       <tfoot>
         <tr>
-          <th>Total de Habitantes</th>
+          <th scope="row">Total de Habitantes</th>
           <td class="num"><strong>210.147.125</strong></td>
         </tr>
       </tfoot>
